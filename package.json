@@ -1,0 +1,21 @@
+{
+  "name": "site_cjw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "sass": "^1.33.0",
+    "tailwindcss": "^2.1.2",
+    "vite": "^2.3.3"
+  }
+}

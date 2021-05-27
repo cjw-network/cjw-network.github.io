@@ -1,0 +1,7 @@
+# publish content of /dist directory to gh-pages
+# https://dev.to/peaceiris/deploy-to-github-pages-with-github-actions-for-static-site-generator-1mo6
+
+- uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./dist

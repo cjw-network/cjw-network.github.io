@@ -1,7 +1,19 @@
 # publish content of /dist directory to gh-pages
-# https://dev.to/peaceiris/deploy-to-github-pages-with-github-actions-for-static-site-generator-1mo6
+# https://github.com/marketplace/actions/github-pages-action#getting-started
 
-- uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./dist
+name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch name to trigger deployment
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

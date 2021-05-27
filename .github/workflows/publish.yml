@@ -1,5 +1,4 @@
-# publish content of /dist directory to gh-pages
-# https://github.com/marketplace/actions/github-pages-action#getting-started
+# https://github.com/peaceiris/actions-gh-pages
 
 name: github pages
 
@@ -10,7 +9,7 @@ on:
   pull_request:
 
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2

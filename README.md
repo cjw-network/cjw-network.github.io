@@ -2,7 +2,7 @@
 
 This is the repository for the CJW Network Website, currently work in progress.
 
-![Publish](https://github.com/cjw-network/cjw-network.github.io/workflows/publish.yml/badge.svg)
+![Publish](https://github.com/cjw-network/cjw-network.github.io/actions/workflows/publish.yml/badge.svg)
 
 ---
 

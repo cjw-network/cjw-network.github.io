@@ -1,15 +1,16 @@
 {
-  "name": "site_cjw",
+  "name": "cjw-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "CJW Network Website",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "echo \"Warning: no tests specified\""
   },
   "keywords": [],
-  "author": "",
+  "author": "@dfritschy",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.2.5",

@@ -1,0 +1,30 @@
+# Security Headers
+
+# Content Security Policy
+# Pre-existing site that uses too much inline code to fix
+# but wants to ensure resources are loaded only over https and disable plugins
+Header set Content-Security-Policy "default-src 'none'; script-src 'self'; images-src 'self' 'unsafe-inline'; frame-ancestors 'self'; "
+
+# HTTP Strict Transport Security
+# Only connect to this site and subdomains via HTTPS for the next two years
+Header set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+
+# X-Frame-Options
+# Only allow my site to frame itself
+# Header set Content-Security-Policy "frame-ancestors 'self'" # see above
+Header set X-Frame-Options "SAMEORIGIN"
+
+# X-Content-Type-Options
+# Prevent browsers from incorrectly detecting non-scripts as scripts
+Header set X-Content-Type-Options "nosniff"
+
+# Referrer Policy
+# Only send the shortened referrer to a foreign origin, full referrer to a local host
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# X-XSS-Protection
+# Block pages from loading when they detect reflected XSS attacks
+Header set X-XSS-Protection: "1; mode=block"
+
+# End Security Headers
+

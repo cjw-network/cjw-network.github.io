@@ -6,7 +6,7 @@
   --text-color: #333333;
   --black: #000000;
   --white: #FFFFFF;
-  --brand-primary: #D11234;
+  --brand-primary: #D51130;
   --brand-secondary: #6F6F6E;
   --brand-complement: #EF9204;
   --gray: var(--brand-secondary);
@@ -17,7 +17,7 @@
     --text-color: #DDDDDD;
     --black: #FFFFFF;
     --white: #151515;
-    --brand-primary: #D11234;
+    --brand-primary: #D51130;
     --brand-secondary: #6F6F6E;
     --brand-complement: #EF9204;
     --gray: var(--brand-secondary);
@@ -43,7 +43,7 @@ body {
   padding: 0;
   font-size: 1rem;
   line-height: 1.25;
-  font-family: Helvetica, serif;
+  font-family: Helvetica, Arial, serif;
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
@@ -106,6 +106,7 @@ body {
     height: 5rem;
     max-width: 60%;
   }
+
   @media screen and (min-width: $md-min) {
     top: 2rem;
     left: 2rem;
@@ -170,14 +171,14 @@ main {
   text-align: center;
 
   > .logo {
-    img {
-      height: auto;
-      max-height: 5rem;
+    height: 5rem;
 
-      @media screen and (min-width: $md-min) {
-        max-width: 60%;
-      }
-      max-width: 80%;
+    img {
+      height: 100%;
+      display: block;
+      margin: auto;
+      max-width: 75%;
+
       &.invert {
         @media (prefers-color-scheme: dark) {
           filter: invert(100%) hue-rotate(180deg);
@@ -205,6 +206,7 @@ main {
 a {
   color: var(--text-color);
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }

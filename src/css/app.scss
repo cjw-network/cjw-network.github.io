@@ -38,12 +38,27 @@ $lg-min: 992px;
 $xl-min: 1200px;
 $xl-max: 1440px;
 
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url(/fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: NotoSerif-BoldItalic;
+  src: url(/fonts/NotoSerif-BoldItalic.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
   line-height: 1.25;
-  font-family: Helvetica, Arial, serif;
+  font-family: NotoSans-Regular, Helvetica, Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
@@ -65,8 +80,7 @@ body {
     }
 
     > .quote {
-      font-family: Georgia, serif;
-      font-style: italic;
+      font-family: NotoSerif-BoldItalic, Georgia, serif;
       color: #FFFFFF;
       font-size: calc(100vh / 10);
       line-height: 1.1;
@@ -213,6 +227,7 @@ a {
 }
 
 .font-bold {
+  font-family: NotoSans-Bold, Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 

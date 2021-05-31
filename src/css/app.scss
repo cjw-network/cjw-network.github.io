@@ -11,6 +11,19 @@
   --brand-complement: #EF9204;
   --gray: var(--brand-secondary);
   --gray-light: #CCCCCC;
+  --shadow-color: #CCCCCC;
+  @media (prefers-color-scheme: dark) {
+    --bg-color: #070707;
+    --text-color: #DDDDDD;
+    --black: #FFFFFF;
+    --white: #151515;
+    --brand-primary: #D11234;
+    --brand-secondary: #6F6F6E;
+    --brand-complement: #EF9204;
+    --gray: var(--brand-secondary);
+    --gray-light: #CCCCCC;
+    --shadow-color: #444444;
+  }
 }
 
 // styling
@@ -54,7 +67,7 @@ body {
     > .quote {
       font-family: Georgia, serif;
       font-style: italic;
-      color: var(--white);
+      color: #FFFFFF;
       font-size: calc(100vh / 10);
       line-height: 1.1;
       @media screen and (orientation: portrait) {
@@ -144,11 +157,11 @@ main {
 .cell {
   border-radius: 5px;
   background-color: var(--white);
-  box-shadow: $box-shadow $box-shadow math.div($box-shadow, 2) 0 var(--gray-light);
+  box-shadow: $box-shadow $box-shadow math.div($box-shadow, 2) 0 var(--shadow-color);
   position: relative;
 
   &:hover {
-    box-shadow: ($box-shadow * 2) ($box-shadow * 2) $box-shadow 0 var(--gray-light);
+    box-shadow: ($box-shadow * 2) ($box-shadow * 2) $box-shadow 0 var(--shadow-color);
   }
 }
 
@@ -158,9 +171,19 @@ main {
 
   > .logo {
     img {
-      display: inline;
-      height: 5rem;
-      max-width: 75%;
+      height: auto;
+      max-height: 5rem;
+
+      @media screen and (min-width: $md-min) {
+        max-width: 60%;
+      }
+      max-width: 80%;
+      &.invert {
+        @media (prefers-color-scheme: dark) {
+          filter: invert(100%) hue-rotate(180deg);
+          mix-blend-mode: screen;
+        }
+      }
     }
   }
 

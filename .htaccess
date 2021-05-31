@@ -28,3 +28,14 @@ Header set X-XSS-Protection: "1; mode=block"
 
 # End Security Headers
 
+
+# other settings
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} \.svn|\.git
+
+# Let's Encrypt support
+RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+# End other settings

@@ -1,0 +1,62 @@
+@use "sass:math";
+@import "variables";
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 2rem 0;
+  @media screen and (min-width: $md-min) {
+    grid-template-columns: 50% 50%;
+    margin: 4rem 0;
+  }
+}
+
+.cell {
+  border-radius: 5px;
+  background-color: var(--white);
+  //noinspection CssInvalidFunction
+  box-shadow: $box-shadow $box-shadow math.div($box-shadow, 2) 0 var(--shadow-color);
+  position: relative;
+
+  &:hover {
+    box-shadow: ($box-shadow * 2) ($box-shadow * 2) $box-shadow 0 var(--shadow-color);
+  }
+}
+
+.card {
+  padding: 2rem;
+  text-align: center;
+
+  > .logo {
+    height: 5rem;
+
+    img {
+      height: 100%;
+      display: block;
+      margin: auto;
+      max-width: 75%;
+
+      &.invert {
+        @media (prefers-color-scheme: dark) {
+          filter: invert(100%) hue-rotate(180deg);
+          mix-blend-mode: screen;
+        }
+      }
+    }
+  }
+
+  > .location {
+    color: var(--gray)
+  }
+
+  > .offer {
+    margin: 1rem 0;
+  }
+
+  > .contact {
+    color: var(--gray)
+  }
+}
+

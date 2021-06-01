@@ -1,0 +1,40 @@
+@import "variables";
+
+.lead {
+  @media screen and (min-width: $sm-min) {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: $xl-min) {
+    font-size: 2rem;
+  }
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.font-bold {
+  font-family: NotoSans-Bold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.text-brand-primary {
+  color: var(--brand-primary)
+}
+
+.text-brand-secondary {
+  color: var(--brand-secondary)
+}
+
+.text-brand-complement {
+  color: var(--brand-complement)
+}

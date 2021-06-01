@@ -1,0 +1,51 @@
+@import "variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: NotoSans-Regular, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  hyphens: auto;
+}
+
+.cjwlogo {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  margin-bottom: 3rem;
+
+  > img {
+    height: 5rem;
+    max-width: 60%;
+  }
+
+  @media screen and (min-width: $md-min) {
+    top: 2rem;
+    left: 2rem;
+    margin-bottom: 4rem;
+  }
+  @media screen and (min-width: $lg-min) {
+    margin-bottom: 6rem;
+  }
+  @media screen and (min-width: $xl-min) {
+    margin-bottom: 8rem;
+  }
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $xl-max;
+  @media screen and (min-width: $md-min) {
+    width: 75%;
+    margin: 0 auto;
+  }
+}

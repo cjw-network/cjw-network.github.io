@@ -1,1 +1,0 @@
-const t=document.querySelectorAll(".arrow a");for(const o of t)o.addEventListener("click",e);function e(t){t.preventDefault();const e=this.getAttribute("href"),o=document.querySelector(e).offsetTop;scroll({top:o,behavior:"smooth"})}

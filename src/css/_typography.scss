@@ -1,11 +1,19 @@
 @import "variables";
 
+h1 {
+  color: var(--brand-primary);
+  @media screen and (min-width: $lg-min) {
+    hyphens: none;
+  }
+}
+
 .lead {
   @media screen and (min-width: $sm-min) {
     font-size: 1.5rem;
   }
   @media screen and (min-width: $xl-min) {
     font-size: 2rem;
+    hyphens: none;
   }
 }
 

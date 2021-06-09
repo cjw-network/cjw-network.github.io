@@ -1,11 +1,45 @@
 @import "variables";
 
+body {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: NotoSans-Regular, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--brand-primary);
+  @media screen and (min-width: $lg-min) {
+    font-size: 2rem;
+    hyphens: none;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: var(--brand-secondary);
+  @media screen and (min-width: $lg-min) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--brand-secondary);
+  @media screen and (min-width: $lg-min) {
+    font-size: 1.25rem;
+  }
+}
+
 .lead {
   @media screen and (min-width: $sm-min) {
     font-size: 1.5rem;
   }
   @media screen and (min-width: $xl-min) {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    hyphens: none;
   }
 }
 

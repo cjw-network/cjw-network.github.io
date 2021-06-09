@@ -3,11 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
-  line-height: 1.25;
-  font-family: NotoSans-Regular, Helvetica, Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
   overflow-x: hidden;
   hyphens: auto;
 }
@@ -48,4 +43,13 @@ main {
     width: 75%;
     margin: 0 auto;
   }
+}
+
+.cta {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+footer {
+  margin: 4rem 0;
 }

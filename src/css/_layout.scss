@@ -31,6 +31,22 @@ body {
   }
 }
 
+.language {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--white);
+  z-index: 2;
+  @media screen and (min-width: $md-min) {
+    top: 2rem;
+    right: 2rem;
+  }
+  a {
+    color: var(--white);
+  }
+}
+
+
 main {
   padding-bottom: 2rem;
 }

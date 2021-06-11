@@ -3,7 +3,7 @@
 # Content Security Policy
 # Pre-existing site that uses too much inline code to fix
 # but wants to ensure resources are loaded only over https and disable plugins
-Header set Content-Security-Policy "default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; frame-ancestors 'self'; report-uri https://webmanufaktur.report-uri.com/r/d/csp/reportOnly'"
+Header set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; frame-ancestors 'self'; report-uri https://webmanufaktur.report-uri.com/r/d/csp/reportOnly'"
 
 # HTTP Strict Transport Security
 # Only connect to this site and subdomains via HTTPS for the next two years

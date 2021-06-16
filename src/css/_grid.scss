@@ -23,6 +23,9 @@
   &:hover {
     box-shadow: ($box-shadow * 2) ($box-shadow * 2) $box-shadow 0 var(--shadow-color);
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .card {

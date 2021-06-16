@@ -70,3 +70,27 @@ main {
 footer {
   margin: 4rem 0;
 }
+
+.partner {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    a {
+      display: block;
+      height: 100%;
+    }
+    img {
+      display: block;
+      width: 50%;
+      padding-right: 2rem;
+      margin-bottom: 0.5rem;
+      vertical-align: middle;
+      @media screen and (min-width: $sm-min) {
+        display: inline-block;
+        width: 20%;
+      }
+    }
+  }
+}

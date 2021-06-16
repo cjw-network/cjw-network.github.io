@@ -12,6 +12,7 @@ body {
   top: 1rem;
   left: 1rem;
   margin-bottom: 3rem;
+  width: calc(100% - 2rem); // fix safari bug
 
   img {
     height: 5rem;
@@ -35,17 +36,17 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: var(--white);
+  color: #FFFFFF;
   z-index: 2;
   @media screen and (min-width: $md-min) {
     top: 2rem;
     right: 2rem;
   }
+
   a {
-    color: var(--white);
+    color: #FFFFFF;
   }
 }
-
 
 main {
   padding-bottom: 2rem;
